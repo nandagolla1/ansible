@@ -1,0 +1,7 @@
+- name: print hellow world in the local hosts
+  hosts: local
+  connection: local #no need of user name and password
+  tasks:
+    - name: print hellow world
+      ansible.builtin.debug:
+        msg: "hellow world"
