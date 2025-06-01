@@ -1,6 +1,6 @@
 - name: variables from prompt
   hosts: local
-  conncetion: local
+  connection: local
   vars_prompt:
     - name: USERNAME
       prompt: enter the username
@@ -13,4 +13,4 @@
     - name: print the user credentials
       ansible.builtin.debug:
         msg: "username : {{ USERNAME }} AND password : {{ PASSWORD }}"
-        
+
