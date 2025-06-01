@@ -1,0 +1,9 @@
+- name: install nginx server
+  hosts: frontend
+  tasks:
+    - name: install nginx server
+      ansible.builtin.debug:
+        msg: "installing nginx"
+      ansible.builtin.package:
+        name: nginx
+        state: present
