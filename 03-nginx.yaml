@@ -1,7 +1,8 @@
 - name: install nginx server
   hosts: frontend
+  become: yes
   tasks:
-    - name: install nginx server
+    - name: hello server
       ansible.builtin.debug:
         msg: "installing nginx"
 
