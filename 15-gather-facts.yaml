@@ -1,0 +1,6 @@
+- name: gahtering facts of the target server 
+  hosts: frontend
+  tasks:
+  - name: print facts
+    ansible.builtin.debug:
+      msg: "{{ ansible_facts }}"
