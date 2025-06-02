@@ -1,4 +1,4 @@
-- nmae: loop packages to install
+- name: loop packages to install
   hosts: frontend
   become: yes
   tasks:
