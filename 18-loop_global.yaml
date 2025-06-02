@@ -1,7 +1,7 @@
 - name: loops
   hosts: local
   connection: local
-  loop:
+  loop:   # In Ansible, loop is used inside a task— not at the play level.
   - nanda
   - siva
   - vinay
