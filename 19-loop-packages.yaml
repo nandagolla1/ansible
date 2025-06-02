@@ -1,0 +1,12 @@
+- nmae: loop packages to install
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: install packages
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: installed
+    loop:
+    - nginx
+    - zip
+    - mysql
