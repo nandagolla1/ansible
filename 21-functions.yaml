@@ -11,3 +11,12 @@
   - name: check undefined varaibles
     ansible.builtin.debug:
       msg: "hello, {{ person | split(',') }}"
+
+  - name: check undefined varaibles
+    vars:
+      course:
+        name: aws DevOps
+        duration: 11
+        trainer: nanda
+    ansible.builtin.debug:
+      msg: "hello, {{ course | dict2items }}"
